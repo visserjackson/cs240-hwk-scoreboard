@@ -79,10 +79,11 @@ function decrementRun() {
   }
 }
 
+//helper function to sum runs
 function sumRuns(boxes) {
   sum = 0;
   for (let i = 0; i < boxes.length; i++) {
-    sum += Number(boxes[i].innerHTML);
+    sum += +boxes[i].innerHTML;
   }
   return sum;
 }
@@ -91,5 +92,14 @@ function sumRuns(boxes) {
 runsPlusNode.addEventListener("click", incrementRun);
 runsMinusNode.addEventListener("click", decrementRun);
 
-console.dir(homeRunTotalNode);
-awayRunTotalNode.innerHTML = sumRuns(homeBoxes);
+//add audio stuff
+chickenDanceSong = new Audio("sounds/chickendance.mp3");
+
+//make it so pressing keyboard button plays chicken dance song
+keyboardNode.addEventListener("click", doChickenDance);
+
+function doChickenDance() {
+  chickenDanceSong.play();
+}
+
+//make it so pressing the chicken dance node
