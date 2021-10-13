@@ -5,9 +5,16 @@
 }
 
 .runs {
-  border: 3px solid white;
+  border: 3px solid white !important;
 }
 
+.away td {
+  border: 3px solid black;
+}
+
+.home td {
+  border: 3px solid black;
+}
 body {
   background-color: white;
 }
