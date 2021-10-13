@@ -38,21 +38,35 @@ let musicNoteNode = document.querySelector("#music-note");
 
 let keyboardNode = document.querySelector("#keyboard");
 
-//make it so that clicking the + button increments the runs for the selected inning by 1
-runsPlusNode.addEventListener("click", incrementRun());
-
+//helper function to increment runs, used with event listener on + button
 function incrementRun() {
   let team = whoNode.value;
-  console.log(team);
   let inning = inningNode.value;
-  console.log(inning);
-
   let boxName = team + inning;
-  console.log(boxName);
 
   if (team == "away") {
     let boxNode = awayBoxes.filter((node) => node.id == boxName);
-    console.dir(boxNode);
+    boxNode[0].innerHTML++;
+  } else {
+    let boxNode = homeBoxes.filter((node) => node.id == boxName);
     boxNode[0].innerHTML++;
   }
 }
+
+function decrementRun() {
+  let team = whoNode.value;
+  let inning = inningNode.value;
+  let boxName = team + inning;
+
+  if (team == "away") {
+    let boxNode = awayBoxes.filter((node) => node.id == boxName);
+    boxNode[0].innerHTML--;
+  } else {
+    let boxNode = homeBoxes.filter((node) => node.id == boxName);
+    boxNode[0].innerHTML--;
+  }
+}
+
+//make it so that clicking the + button increments the runs for the selected inning by 1
+runsPlusNode.addEventListener("click", incrementRun);
+runsMinusNode.addEventListener("click", decrementRun);
