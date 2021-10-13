@@ -50,9 +50,40 @@ body {
 }
 
 #cc {
-  /* background-color: black; */
+  background-color: black;
+  width: 263px;
+  height: 162px;
 }
 
+#cc-name {
+  font-family: Arial;
+  color: white;
+  font-size: 28px;
+}
+
+#who {
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+}
+
+#runs-toggle {
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+}
+
+#inning-toggle {
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+}
+
+#sound {
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+}
 .table-elements {
   text-align: left;
 }
