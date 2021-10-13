@@ -25,7 +25,7 @@ console.dir(homeBoxes);
 let whoNode = document.querySelector("#who-toggle");
 //console.dir(whoNode);
 
-let inningNode = document.querySelector("#inning-toggle");
+let inningNode = document.querySelector("#inning-options");
 console.dir(inningNode);
 
 let runsPlusNode = document.querySelector("#runs-plus");
@@ -43,9 +43,16 @@ runsPlusNode.addEventListener("click", incrementRun());
 
 function incrementRun() {
   let team = whoNode.value;
-  console.dir(team);
-  let inning = inningNode["value"];
-  console.dir(inning);
-}
+  console.log(team);
+  let inning = inningNode.value;
+  console.log(inning);
 
-incrementRun();
+  let boxName = team + inning;
+  console.log(boxName);
+
+  if (team == "away") {
+    let boxNode = awayBoxes.filter((node) => node.id == boxName);
+    console.dir(boxNode);
+    boxNode[0].innerHTML++;
+  }
+}
