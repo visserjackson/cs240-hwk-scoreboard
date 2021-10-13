@@ -41,3 +41,7 @@ for (let i = 7; i < boxes.length; i++) {
 
 console.dir(awayBoxes);
 console.dir(homeBoxes);
+
+//test to see if scores can be changed
+awayBoxes[0].innerHTML++;
+homeBoxes[1].innerHTML = 5;
