@@ -44,7 +44,9 @@ console.dir(homeBoxes);
 
 //the away team scored in the third inning. let's see if i can update that
 let away3Box = awayBoxes.filter((node) => node.id == "away3");
-console.dir(away3Box);
+console.dir(away3Box); //caputred correct box
+//add a run
+away3Box[0].innerHTML++;
 
 // //trying third approach
 
