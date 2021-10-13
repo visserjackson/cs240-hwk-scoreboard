@@ -42,11 +42,15 @@ body {
   background-color: white;
 }
 
-table {
+#scoreboard {
   background-color: rgb(50, 100, 85);
   width: 432px;
   height: 152px;
   font-family: Arial;
+}
+
+#cc {
+  /* background-color: black; */
 }
 
 .table-elements {
