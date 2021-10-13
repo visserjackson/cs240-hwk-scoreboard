@@ -1,11 +1,15 @@
-h1 {
+#park-name {
   font-size: 28px;
   color: white;
   font-family: Arial;
 }
 
+.runs {
+  border: 3px solid white;
+}
+
 body {
-  background-color: lightblue;
+  background-color: white;
 }
 
 table {
