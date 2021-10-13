@@ -60,10 +60,14 @@ function decrementRun() {
 
   if (team == "away") {
     let boxNode = awayBoxes.filter((node) => node.id == boxName);
-    boxNode[0].innerHTML--;
+    if (boxNode[0].innerHTML - 1 >= 0) {
+      boxNode[0].innerHTML--;
+    }
   } else {
     let boxNode = homeBoxes.filter((node) => node.id == boxName);
-    boxNode[0].innerHTML--;
+    if (boxNode[0].innerHTML - 1 >= 0) {
+      boxNode[0].innerHTML--;
+    }
   }
 }
 
