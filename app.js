@@ -94,6 +94,9 @@ runsMinusNode.addEventListener("click", decrementRun);
 
 //add audio stuff
 chickenDanceSong = new Audio("sounds/chickendance.mp3");
+buildupSong = new Audio("sounds/buildup.mp3");
+charge1Song = new Audio("sounds/charge1.mp3");
+charge2Song = new Audio("sounds/charge2.mp3");
 
 //make it so pressing keyboard button plays chicken dance song
 keyboardNode.addEventListener("click", doChickenDance);
@@ -102,4 +105,22 @@ function doChickenDance() {
   chickenDanceSong.play();
 }
 
-//make it so pressing the chicken dance node
+//make it so pressing the music note button plays a random song
+musicNoteNode.addEventListener("click", doRandomMusic);
+
+function doRandomMusic() {
+  let num = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+  switch (num) {
+    case 1:
+      buildupSong.play();
+      break;
+
+    case 2:
+      charge1Song.play();
+      break;
+
+    case 3:
+      charge2Song.play();
+      break;
+  }
+}
