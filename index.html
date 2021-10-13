@@ -53,13 +53,32 @@
     </tr>
     <tr>
       <td id="who">Who:</td>
-      <td id="inning-toggle">Inning:</td>
+      <td><select id="who-toggle">
+        <option value="away">Away</option>
+        <option value="home">Home</option>
+      </select></td>
+      <td id="inning-toggle-label">Inning:</td>
+      <td id="inning-toggle">
+        <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      </td>
     </tr>
     <tr>
-      <td id="runs-toggle">Runs:</td>
+      <td id="runs-toggle-label">Runs:</td>
+      <td><button id="runs-plus">+</button></td>
+      <td><button id="runs-minus">-</button></td>
     </tr>
     <tr>
       <td id="sound">Sound</td>
+      <td><button id="music-note">🎵</button></td>
+      <td><button id="keyboard">🎹</button></td>
     </tr>
 
     </table>
