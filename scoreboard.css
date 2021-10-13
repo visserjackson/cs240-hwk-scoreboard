@@ -7,3 +7,13 @@ h1 {
 body {
   background-color: lightblue;
 }
+
+table {
+  background-color: rgb(50, 100, 85);
+  width: 432px;
+  height: 152px;
+}
+
+.table-elements {
+  text-align: left;
+}
