@@ -1,1 +1,9 @@
-/* Your CSS definitions here */
+h1 {
+  font-size: 28px;
+  color: white;
+  font-family: Arial;
+}
+
+body {
+  background-color: black;
+}
