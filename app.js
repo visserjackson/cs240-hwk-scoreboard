@@ -27,31 +27,33 @@ console.dir(boxes);
 // boxesObj["#away1"].innerHTML++;
 // console.dir(boxesObj);
 
-// //trying new approach entirely
-// let awayBoxes = [];
-// let homeBoxes = [];
+//trying new approach entirely
+let awayBoxes = [];
+let homeBoxes = [];
 
-// for (let i = 0; i < 7; i++) {
-//   awayBoxes.push(boxes[i]);
-// }
-
-// for (let i = 7; i < boxes.length; i++) {
-//   homeBoxes.push(boxes[i]);
-// }
-
-// console.dir(awayBoxes);
-// console.dir(homeBoxes);
-
-// //test to see if scores can be changed
-
-// awayBoxes[0].innerHTML++;
-
-//trying third approach
-
-let boxesArray = [];
-
-for (let box of boxes) {
-  boxesArray.push([box.id, box.innerHTML]);
+for (let i = 0; i < 7; i++) {
+  awayBoxes.push(boxes[i]);
 }
 
-console.dir(boxesArray);
+for (let i = 7; i < boxes.length; i++) {
+  homeBoxes.push(boxes[i]);
+}
+
+console.dir(awayBoxes);
+console.dir(homeBoxes);
+
+//test to see if scores can be changed
+
+// //trying third approach
+
+// let boxesArray = [];
+
+// for (let box of boxes) {
+//   boxesArray.push([box.id, box.innerHTML]);
+// }
+
+// console.dir(boxesArray);
+// //let's say the away team scores in the third inning. test to see if i can update that
+// let away3Box = boxesArray.filter((box) => box.includes("away3"));
+// console.dir(away3Box); //succesfully caputred correct box
+// away3Box[0][1]++;
