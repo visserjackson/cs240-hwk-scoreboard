@@ -27,7 +27,7 @@ console.dir(boxes);
 // boxesObj["#away1"].innerHTML++;
 // console.dir(boxesObj);
 
-//trying new approach entirely
+//store nodes themselves in two arrays (one for home, one for away)
 let awayBoxes = [];
 let homeBoxes = [];
 
@@ -42,11 +42,28 @@ for (let i = 7; i < boxes.length; i++) {
 console.dir(awayBoxes);
 console.dir(homeBoxes);
 
-//the away team scored in the third inning. let's see if i can update that
-let away3Box = awayBoxes.filter((node) => node.id == "away3");
-console.dir(away3Box); //caputred correct box
-//add a run
-away3Box[0].innerHTML++;
+//query for manipulable elements from control center
+let whoNode = document.querySelector("#who-toggle");
+//console.dir(whoNode);
+
+let inningNode = document.querySelector("#inning-toggle");
+//console.dir(inningNode);
+
+let runsPlusNode = document.querySelector("#runs-plus");
+//console.dir(runsPlusNode);
+let runsMinusNode = document.querySelector("#runs-minus");
+//console.dir(runsMinusNode);
+
+let musicNoteNode = document.querySelector("#music-note");
+//console.dir(musicNoteNode);
+
+let keyboardNode = document.querySelector("#keyboard");
+//console.dir(keyboardNode);
+// //the away team scored in the third inning. let's see if i can update that
+// let away3Box = awayBoxes.filter((node) => node.id == "away3");
+// console.dir(away3Box); //caputred correct box
+// //add a run
+// away3Box[0].innerHTML++;
 
 // //trying third approach
 
