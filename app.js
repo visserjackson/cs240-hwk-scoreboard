@@ -42,7 +42,9 @@ for (let i = 7; i < boxes.length; i++) {
 console.dir(awayBoxes);
 console.dir(homeBoxes);
 
-//test to see if scores can be changed
+//the away team scored in the third inning. let's see if i can update that
+let away3Box = awayBoxes.filter((node) => node.id == "away3");
+console.dir(away3Box);
 
 // //trying third approach
 
