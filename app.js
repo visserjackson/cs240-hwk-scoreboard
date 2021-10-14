@@ -19,7 +19,6 @@ let keyboardNode = document.querySelector("#keyboard");
 
 //get image node
 let imageNode = document.querySelector("img");
-console.dir(imageNode);
 
 //add audio files
 chickenDanceSong = new Audio("sounds/chickendance.mp3");
