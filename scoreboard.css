@@ -1,11 +1,13 @@
 #park-name {
-  font-size: 28px;
+  font-size: 16px;
   color: white;
   font-family: Arial;
+  padding-left: 50px;
+  padding-bottom: 15px;
 }
 
 .inning-headers {
-  font-size: 12px;
+  font-size: 16px;
   color: white;
   font-weight: bold;
 }
@@ -39,6 +41,7 @@
 .home td {
   border: 3px solid black;
   text-align: center;
+  margin-top: 50px;
 }
 body {
   background-color: white;
