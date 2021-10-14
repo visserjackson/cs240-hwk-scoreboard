@@ -1,4 +1,4 @@
-CS 240 HW #3: .CSS PARK
+# CS 240 HW #3: .CSS PARK
 
 **NOTE: I forgot what you said in class Tuesday about following the directions exactly (with font size, etc.) and instead
 modeled my scoreboard and control center to model what your working solution looked like as close as possible.**
