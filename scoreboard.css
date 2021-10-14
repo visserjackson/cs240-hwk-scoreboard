@@ -62,7 +62,9 @@ body {
 #cc-name {
   font-family: Arial;
   color: white;
-  font-size: 28px;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 #who {
@@ -90,6 +92,7 @@ body {
   color: white;
   font-size: 16px;
   padding-bottom: 20px;
+  padding-top: 20px;
   padding-left: 20px;
 }
 .table-elements {
@@ -107,6 +110,15 @@ button {
   font-family: Courier;
 }
 
-.runs-row {
-  width: 50%;
+#runs-plus {
+  margin-right: 10px;
+}
+
+#music-note {
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+#inning-options {
+  margin-right: 10px;
 }
