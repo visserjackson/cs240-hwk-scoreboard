@@ -108,7 +108,7 @@ musicNoteNode.addEventListener("click", doRandomMusicAndImage);
 //helper function to play random music and image
 function doRandomMusicAndImage() {
   let songNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
-  let imageNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+  let imageNum = Math.floor(Math.random() * (4 - 1 + 1) + 1);
   switch (songNum) {
     case 1:
       buildupSong.play();
@@ -122,4 +122,24 @@ function doRandomMusicAndImage() {
       charge2Song.play();
       break;
   }
+  switch (imageNum) {
+    case 1:
+      imageNode.src = "images/megaphone.png";
+      break;
+
+    case 2:
+      imageNode.src = "images/makenoise.jpeg";
+      break;
+
+    case 3:
+      imageNode.src = "images/kisscam.png";
+      break;
+
+    case 4:
+      imageNode.src = "images/rhinocharge.png";
+      break;
+  }
+  setTimeout(() => {
+    imageNode.src = "images/ups.png";
+  }, 10000);
 }
