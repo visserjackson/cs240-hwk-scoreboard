@@ -29,6 +29,10 @@ let keyboardNode = document.querySelector("#keyboard");
 let awayRunTotalNode = document.querySelector("#awayR");
 let homeRunTotalNode = document.querySelector("#homeR");
 
+//get image node
+let imageNode = document.querySelector("img");
+console.dir(imageNode);
+
 //helper function to increment runs, used with event listener on + button
 function incrementRun() {
   let team = whoNode.value;
@@ -92,6 +96,10 @@ keyboardNode.addEventListener("click", doChickenDance);
 //helper function to do the chicken dance song and image
 function doChickenDance() {
   chickenDanceSong.play();
+  imageNode.src = "images/sdchicken.jpg";
+  setTimeout(() => {
+    imageNode.src = "images/ups.png";
+  }, 10000);
 }
 
 //make it so pressing the music note button plays a random song
@@ -99,8 +107,9 @@ musicNoteNode.addEventListener("click", doRandomMusicAndImage);
 
 //helper function to play random music and image
 function doRandomMusicAndImage() {
-  let num = Math.floor(Math.random() * (3 - 1 + 1) + 1);
-  switch (num) {
+  let songNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+  let imageNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+  switch (songNum) {
     case 1:
       buildupSong.play();
       break;
