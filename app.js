@@ -4,7 +4,6 @@
  */
 //query for box nodes
 let boxes = document.querySelectorAll(".inning-scores");
-console.dir(boxes);
 
 //store box nodes themselves in two arrays (one for home, one for away)
 let awayBoxes = [];
@@ -18,26 +17,15 @@ for (let i = 7; i < boxes.length; i++) {
   homeBoxes.push(boxes[i]);
 }
 
-console.dir(awayBoxes);
-console.dir(homeBoxes);
-
 //query for manipulable elements from control center
 let whoNode = document.querySelector("#who-toggle");
-//console.dir(whoNode);
-
 let inningNode = document.querySelector("#inning-options");
-console.dir(inningNode);
-
 let runsPlusNode = document.querySelector("#runs-plus");
-//console.dir(runsPlusNode);
 let runsMinusNode = document.querySelector("#runs-minus");
-//console.dir(runsMinusNode);
-
 let musicNoteNode = document.querySelector("#music-note");
-//console.dir(musicNoteNode);
-
 let keyboardNode = document.querySelector("#keyboard");
 
+//get away and home total runs nodes
 let awayRunTotalNode = document.querySelector("#awayR");
 let homeRunTotalNode = document.querySelector("#homeR");
 
@@ -101,14 +89,16 @@ charge2Song = new Audio("sounds/charge2.mp3");
 //make it so pressing keyboard button plays chicken dance song
 keyboardNode.addEventListener("click", doChickenDance);
 
+//helper function to do the chicken dance song and image
 function doChickenDance() {
   chickenDanceSong.play();
 }
 
 //make it so pressing the music note button plays a random song
-musicNoteNode.addEventListener("click", doRandomMusic);
+musicNoteNode.addEventListener("click", doRandomMusicAndImage);
 
-function doRandomMusic() {
+//helper function to play random music and image
+function doRandomMusicAndImage() {
   let num = Math.floor(Math.random() * (3 - 1 + 1) + 1);
   switch (num) {
     case 1:

@@ -5,84 +5,91 @@
     <link rel="stylesheet" href="scoreboard.css" />
   </head>
   <body>
-    
     <table id="scoreboard">
       <tr>
-        <th colspan="9" id="park-name">.CSS PARK</th>
-        <div class="table-elements">
+        <td>
+          <table>
+            <tr>
+              <th colspan="9" id="park-name">.CSS PARK</th>
+            </tr>
+            <tr class="inning-headers">
+              <th></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>R</th>
+            </tr>
+            <tr class="away">
+              <th class="team-names">AWAY</th>
+              <td id="away1" class="inning-scores">0</td>
+              <td id="away2" class="inning-scores">0</td>
+              <td id="away3" class="inning-scores">0</td>
+              <td id="away4" class="inning-scores">0</td>
+              <td id="away5" class="inning-scores">0</td>
+              <td id="away6" class="inning-scores">0</td>
+              <td id="away7" class="inning-scores">0</td>
+              <td id="awayR" class="runs">0</td>
+            </tr>
+            <tr class="home">
+              <th class="team-names">HOME</th>
+              <td id="home1" class="inning-scores">0</td>
+              <td id="home2" class="inning-scores">0</td>
+              <td id="home3" class="inning-scores">0</td>
+              <td id="home4" class="inning-scores">0</td>
+              <td id="home5" class="inning-scores">0</td>
+              <td id="home6" class="inning-scores">0</td>
+              <td id="home7" class="inning-scores">0</td>
+              <td id="homeR" class="runs">0</td>
+            </tr>
+          </table>
+        </td>
+
+        <td><img src="images/ups.png" id="ups-logo" /></td>
       </tr>
-      <tr class="inning-headers">
-        <th></th>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>R</th>
-      </tr>
-      <tr class="away">
-        <th class="team-names">AWAY</th>
-        <td id="away1" class="inning-scores">0</td>
-        <td id="away2" class="inning-scores">0</td>
-        <td id="away3" class="inning-scores">0</td>
-        <td id="away4" class="inning-scores">0</td>
-        <td id="away5" class="inning-scores">0</td>
-        <td id="away6" class="inning-scores">0</td>
-        <td id="away7" class="inning-scores">0</td>
-        <td id="awayR" class="runs">0</td>
-      </tr>
-      <tr class="home">
-        <th class="team-names">HOME</th>
-        <td id="home1" class="inning-scores">0</td>
-        <td id="home2" class="inning-scores">0</td>
-        <td id="home3" class="inning-scores">0</td>
-        <td id="home4" class="inning-scores">0</td>
-        <td id="home5" class="inning-scores">0</td>
-        <td id="home6" class="inning-scores">0</td>
-        <td id="home7" class="inning-scores">0</td>
-        <td id="homeR" class="runs">0</td>
-        <th rowspan="3" colspan="4"><img src="images/ups.png" id="ups-logo"></th>
-      </tr>
-    </div>
     </table>
-    <br>
-    <br>
+    <br />
+    <br />
     <table id="cc">
       <tr>
-      <th colspan="4" id="cc-name">CONTROL CENTER</th>
-    </tr>
-    <tr>
-      <td id="who">Who:</td>
-      <td><select id="who-toggle">
-        <option value="away">Away</option>
-        <option value="home">Home</option>
-      </select></td>
-      <td id="inning-toggle-label">Inning:</td>
-      <td id="inning-toggle">
-        <select id="inning-options">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-      </select>
-      </td>
-    </tr>
-    <tr class="runs-row">
-      <td id="runs-toggle-label">Runs:</td>
-      <td><button id="runs-plus">+</button><button id="runs-minus">-</button></td>
-      
-    </tr>
-    <tr>
-      <td id="sound">Sound:</td>
-      <td><button id="music-note">🎵</button><button id="keyboard">🎹</button></td>
-      
-    </tr>
-
+        <th colspan="4" id="cc-name">CONTROL CENTER</th>
+      </tr>
+      <tr>
+        <td id="who">Who:</td>
+        <td>
+          <select id="who-toggle">
+            <option value="away">Away</option>
+            <option value="home">Home</option>
+          </select>
+        </td>
+        <td id="inning-toggle-label">Inning:</td>
+        <td id="inning-toggle">
+          <select id="inning-options">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </td>
+      </tr>
+      <tr class="runs-row">
+        <td id="runs-toggle-label">Runs:</td>
+        <td>
+          <button id="runs-plus">+</button><button id="runs-minus">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td id="sound">Sound:</td>
+        <td>
+          <button id="music-note">🎵</button><button id="keyboard">🎹</button>
+        </td>
+      </tr>
     </table>
 
     <script src="app.js"></script>

@@ -28,7 +28,7 @@
 
 .runs {
   border: 3px solid white !important;
-  font-size: 12px;
+  font-size: 16px;
   color: white;
   font-weight: normal;
 }
@@ -96,9 +96,6 @@ body {
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
-}
-.table-elements {
-  text-align: left;
 }
 
 #ups-logo {
